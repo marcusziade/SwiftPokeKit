@@ -2,10 +2,10 @@ import Foundation
 
 public struct TypeSlot: Codable {
     public let slot: Int
-    public let type: Type
+    public let type: TypeStruct
 }
 
-public struct Type: Codable {
+public struct TypeStruct: Codable {
     public let name: String
     public let url: URL
 }
