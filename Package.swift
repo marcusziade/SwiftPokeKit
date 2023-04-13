@@ -7,9 +7,7 @@ let package = Package(
     name: "SwiftPokeKit",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "SwiftPokeKit",
-            targets: ["SwiftPokeKit"]),
+        .library(name: "SwiftPokeKit", targets: ["SwiftPokeKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
