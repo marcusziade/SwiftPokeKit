@@ -6,7 +6,6 @@ public struct TypeSlot: Codable {
 }
 
 public struct Type: Codable {
-    public let id: Int
     public let name: String
-    public let url: String
+    public let url: URL
 }

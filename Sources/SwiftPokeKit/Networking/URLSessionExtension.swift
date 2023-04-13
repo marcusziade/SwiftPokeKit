@@ -36,6 +36,7 @@ import Foundation
 /// ```
 ///
 @available(iOS 15, *)
+@available(macOS 12, *)
 extension URLSession {
     /// Sends an API request and returns the decoded response using the Swift async/await feature.
     ///

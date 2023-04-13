@@ -7,7 +7,6 @@ public struct AbilitySlot: Codable {
 }
 
 public struct Ability: Codable {
-    public let id: Int
     public let name: String
-    public let url: String
+    public let url: URL
 }
