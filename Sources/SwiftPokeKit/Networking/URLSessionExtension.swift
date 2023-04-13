@@ -86,6 +86,7 @@ extension URLSession {
         
         if (200...299).contains(httpResponse.statusCode) {
             let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             return try decoder.decode(T.Response.self, from: data)
         } else {
             throw APIError.apiError(httpResponse.statusCode, "Request failed with status code: \(httpResponse.statusCode)")
